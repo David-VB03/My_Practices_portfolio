@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Miniproyectos Frontend | Tu Nombre</title>
+    <meta name="description"
+        content="Explora mi colección de retos frontend de maquetación avanzada utilizando HTML, CSS semántico, layouts con Grid, Flexbox y metodología BEM.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tu-usuario.github.io/nombre-del-repositorio/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main_Style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Catalogo de Practicas de Frontend Mentor</h1>
+            <p class="header__subtitle">Proyectos de maquetación web enfocados en semántica, accesibilidad y
+                arquitectura CSS limpia.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="catalog" aria-labelledby="catalog-title">
+            <h2 id="catalog-title" class="catalog__title">Retos Completados</h2>
+
+            <!-- ===== BUSCADOR ===== -->
+            <div class="buscador">
+                <input type="text" id="buscadorInput" placeholder="🔍 Buscar tarjeta por nombre...">
+                <button onclick="buscarTarjetas()">Buscar</button>
+                <button class="limpiar" onclick="limpiarBusqueda()">Limpiar</button>
+            </div>
+
+            <div class="catalog__grid">
+
+
+                <!-- Mensaje sin resultados -->
+                <div class="sin-resultados" id="sinResultados">
+                    😕 No se encontraron tarjetas
+                </div>
+
+                <article class="project-card">
+                    <div class="project-card__preview">
+                        <img src="List_Screenshot/Fifth_evidence.png" alt="Vista previa del reto Testimonial section"
+                            class="project-card__img" loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <span class="project-card__badge project-card__badge--Novato">Novato</span>
+                        <h3 class="project-card__title">Seccion de Testimonios</h3>
+                        <p class="project-card__description">Este desafío será una práctica perfecta para cualquiera que
+                            quiera poner a prueba sus habilidades con CSS Grid.</p>
+                        <div class="project-card__actions">
+                            <a href="https://david-vb03.github.io/Card_Feature_section/" class="project-card__link">Ver
+                                Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+                <article class="project-card">
+                    <div class="project-card__preview">
+                        <img src="List_Screenshot/BACKGROUND.png" alt="Vista previa del reto Card Section"
+                            class="project-card__img" loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <span class="project-card__badge project-card__badge--Novato">Novato</span>
+                        <h3 class="project-card__title">Seccion de Tarjetas</h3>
+                        <p class="project-card__description">Un buen reto de diseño para principiantes.</p>
+                        <div class="project-card__actions">
+                            <a href="https://david-vb03.github.io/Card_Feature_section/" class="project-card__link">Ver
+                                Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__preview">
+                        <img src="/List_Screenshot/evidence.png"
+                            alt="Vista previa del diseño escalonado con cuatro tarjetas" class="project-card__img"
+                            loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <span class="project-card__badge project-card__badge--Novato">Novato</span>
+                        <h3 class="project-card__title">Componente de un Producto</h3>
+                        <p class="project-card__description">Este reto, que solo utiliza HTML y CSS, será perfecto para
+                            cualquiera que esté empezando a crear proyectos responsivos.</p>
+                        <div class="project-card__actions">
+                            <a href="https://david-vb03.github.io/Product_preview_component/"
+                                class="project-card__link">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__preview">
+                        <img src="/List_Screenshot/image-omelette.jpeg" alt="Vista previa del reto Stats Preview Card"
+                            class="project-card__img" loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <span class="project-card__badge project-card__badge--Novato">Novato</span>
+                        <h3 class="project-card__title">Pagina de una Receta</h3>
+                        <p class="project-card__description">Este reto me ayudo a centrarte en escribir HTML semántico.
+                            Me asegure de analizar qué elementos HTML son los más adecuados para cada fragmento de
+                            contenido.</p>
+                        <div class="project-card__actions">
+                            <a href="https://david-vb03.github.io/Recipe_Website/" class="project-card__link">Ver
+                                Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-card__preview">
+                        <img src="List_Screenshot/screenshot.png" alt="Vista previa del Social Link perfil"
+                            class="project-card__img" loading="lazy">
+                    </div>
+                    <div class="project-card__content">
+                        <span class="project-card__badge project-card__badge--Novato">Novato</span>
+                        <h3 class="project-card__title">Social Links Perfil</h3>
+                        <p class="project-card__description">En este pequeño proyecto,
+                            He creado un perfil de una persona donde puedes encontrar sus redes sociales.</p>
+                        <div class="project-card__actions">
+                            <a href="https://david-vb03.github.io/Social_Links_Profile/" class="project-card__link">Ver
+                                Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Catálogo Desarrollado por <a href="https://github.com/David-VB03"
+                target="_blank" rel="no opener noreferrer ">David_VB</a>. Todos los derechos
+            reservados.</p>
+    </footer>
+    <script src="main_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+/* ==========================================================================
+   1. VARIABLES DE DISEÑO (Arquitectura de Diseño Centralizada)
+   ========================================================================== */
+:root {
+    /* Paleta de Colores (Muted / Soft) */
+    --clr-bg: #f8fafc;
+    --clr-surface: #ffffff;
+    --clr-text-main: #0f172a;
+    --clr-text-muted: #475569;
+    --clr-primary: #2563eb;
+    --clr-primary-hover: #1d4ed8;
+    
+    /* Estados de Dificultad (Modificadores BEM) */
+    --clr-badge-Novato: #10b981;
+    --clr-badge-junior: #3b82f6;
+
+    /* Fuentes y Escala Fluida (A11y & Scalability) */
+    --ff-main: 'Inter', sans-serif;
+    --fs-body: 1rem;
+    --fs-title-main: clamp(1.75rem, 4vw, 2.5rem);
+    --fs-title-section: clamp(1.35rem, 3vw, 1.85rem);
+
+    /* Efectos Globales */
+    --radius-md: 12px;
+    --shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   2. RESET PROFESIONAL (Evita fallos de diseño comunes)
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-main);
+    background-color: var(--clr-bg);
+    color: var(--clr-text-main);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+/* Eliminación de espacio base en imágenes (Reset de Ingeniería frontend) */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-text-main);
+    font-family: cursive;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   3. ESTILOS DE BLOQUES CON ANIDAMIENTO NATIVO (Sintaxis Moderna)
+   ========================================================================== */
+
+/* Bloque: Header */
+.header {
+    background-color: var(--clr-surface);
+    border-bottom: 1px solid #e2e8f0;
+    padding: 3rem 1.5rem;
+    text-align: center;
+
+    .header__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .header__title {
+        font-size: var(--fs-title-main);
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.75rem;
+    }
+
+    .header__subtitle {
+        color: var(--clr-text-muted);
+        font-size: 1.1rem;
+    }
+}
+
+/* Bloque: Main Content Container */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+/*Buscador */
+
+   /* ===== BUSCADOR ===== */
+        .buscador {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .buscador input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .buscador input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+        }
+
+        .buscador button {
+            padding: 12px 30px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buscador button:hover {
+            background: #45a049;
+            transform: scale(1.02);
+        }
+
+        .buscador .limpiar {
+            background: #f44336;
+        }
+
+        .buscador .limpiar:hover {
+            background: #da190b;
+        }
+        /* ===== TARJETA OCULTA (para el buscador) ===== */
+        .project-card.oculta {
+            display: none;
+        }
+
+        
+        /* ===== MENSAJE CUANDO NO HAY RESULTADOS ===== */
+        .sin-resultados {
+            display: none;
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 18px;
+        }
+
+        .sin-resultados.visible {
+            display: block;
+        }
+/* Bloque: Catálogo */
+.catalog {
+    .catalog__title {
+        font-size: var(--fs-title-section);
+        font-weight: 600;
+        margin-bottom: 2rem;
+        position: relative;
+        padding-left: 12px;
+        
+        /* Decorador de borde izquierdo como acento visual elegante */
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 4px;
+            background-color: var(--clr-primary);
+            border-radius: 2px;
+        }
+    }
+
+    /* Layout Responsivo Dinámico con CSS Grid (Ahorra Media Queries manuales) */
+    .catalog__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-rows: 1fr;
+        align-content: end;
+        gap: 2rem;
+       
+    }
+}
+
+/* Bloque BEM: Project Card */
+.project-card {
+    background-color: var(--clr-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column; /* Estructura vertical */
+
+    /* Efecto Hover basado en elevación */
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .project-card__preview {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 16 / 10; /* Bloqueo de aspecto responsivo */
+    }
+
+    .project-card__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ajuste inteligente sin deformación */
+    }
+
+    .project-card__content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /* Empuja las acciones al fondo de la tarjeta */
+    }
+
+    /* Elementos con variaciones por Modificadores */
+    .project-card__badge {
+        align-self: flex-start;
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.25rem 0.75rem;
+        border-radius: 50px;
+        color: #0077e7;
+        font-weight: 700;
+        border-bottom: 1px solid #0077e7;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+
+        &--Novato {
+            background-color: var(--clr-badge-Novato);
+        }
+
+        &--junior {
+            background-color: var(--clr-badge-junior);
+        }
+    }
+    .project-card__badge--junior{
+        color: #e9c705;
+        border-bottom: 1px solid #e9c705;
+    }
+
+    .project-card__title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-card__description {
+        color: var(--clr-text-muted);
+        font-size: 0.925rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-card__actions {
+        margin-top: auto; /* Empuja el botón al final si hay descripciones más cortas */
+    }
+
+    .project-card__link {
+        display: inline-block;
+        background-color: var(--clr-primary);
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 0.95rem;
+        padding: 0.65rem 1.25rem;
+        border-radius: 6px;
+        width: 100%;
+        text-align: center;
+        transition: var(--transition-smooth);
+
+        &:hover {
+            background-color: var(--clr-primary-hover);
+        }
+    }
+}
+
+/* Bloque: Footer */
+.footer {
+    background-color: var(--clr-surface);
+    border-top: 1px solid #e2e8f0;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+
+    .footer__text {
+        color: var(--clr-text-muted);
+        font-size: 0.875rem;
+    }
+}
+
+/* PseudoElementos*/
+
+a:hover{
+    color:var(--clr-primary);
+    font-weight: 600;
+    font-family: cursive;
+}
