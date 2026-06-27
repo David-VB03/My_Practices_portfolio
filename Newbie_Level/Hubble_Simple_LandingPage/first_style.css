@@ -1,0 +1,118 @@
+@import url('/base.css');
+
+body{
+    min-height: 100vh;
+    background-image: url('images/bg-mobile.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+  background-position:top;
+   font-family: 'Poppins';
+   font-weight: 400;
+    background-color: var(--Purple-700);
+   display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    color: var(--white);
+     padding: 1.2rem
+}
+
+:root{
+--Purple-700: hsl(257, 40%, 49%);
+--Magenta-400: hsl(300, 69%, 71%);
+--white:#ffffff;
+}
+header{
+    padding: inherit;
+    display: flex;
+    margin-block-end:1.2rem;
+    
+}
+header img{
+    min-width: 6rem;
+    max-width: 13rem;
+}
+
+main{
+    display: flex;
+    flex-direction:column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: 600;
+}
+p{
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    padding-inline: 0.7rem;
+   font-weight: 400;
+}
+.content{
+     padding-inline:  1.3rem;
+}
+.img__container{
+    margin-block-end: 3rem;
+}
+.img__container img{
+    width: 100%;
+}
+.btn{
+    padding: 1rem 0.7rem;
+    min-width: 20%;
+    width: 14rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    color: var(--Purple-700);
+    box-shadow: -3px 14px 62px -21px rgba(0, 0, 0, 0.2);
+}
+.links__container{
+    margin-block-start: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    
+}
+a svg{
+    border: 1.5px solid var(--white);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0.5rem;
+    color: var(--white);
+}
+
+
+@media  (min-width:52rem) {
+    
+    .content{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .img__container{
+        flex: 1;
+    }
+    main{
+        font-size: 0.7rem;
+        text-align: start;
+        align-items: flex-start;
+        flex: 1;
+    }
+    h1{
+        
+        font-size: clamp(0.8rem,3.5vw,2.5rem);
+    }
+    .links__container{
+        margin-block-start: 45vh;
+        align-self: flex-end;
+    }
+    p{
+        font-size: clamp(0.8rem,1.5vw,1.2rem);
+        min-height: 1.4;
+        padding-inline: 0;
+    }
+}
