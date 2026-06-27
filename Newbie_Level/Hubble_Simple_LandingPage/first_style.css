@@ -87,7 +87,9 @@ a svg{
 
 
 @media  (min-width:52rem) {
-    
+    body{
+        background-image: url('images/bg-desktop.svg');
+    }
     .content{
         display: flex;
         flex-direction: row;
@@ -108,12 +110,12 @@ a svg{
         font-size: clamp(0.8rem,3.5vw,2.5rem);
     }
     .links__container{
-        margin-block-start: 45vh;
+        margin-block-start: 35vh;
         align-self: flex-end;
     }
     p{
         font-size: clamp(0.8rem,1.5vw,1.2rem);
-        min-height: 1.4;
+        min-height: 1.4px;
         padding-inline: 0;
     }
     button{
