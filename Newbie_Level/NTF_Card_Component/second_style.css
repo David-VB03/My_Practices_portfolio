@@ -40,10 +40,49 @@ h1{
     color: var(--White);
 }
 
+picture{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+  .overlay {
+    border-radius: 1.2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: hsla(178, 100%, 50%, 0.5);/* Color con opacidad */
+            opacity: 0;              /* Oculto por defecto */
+            transition: opacity 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;    /* Permite que el hover se active sobre la imagen */
+        }
+   .overlay img{
+   
+            color: white;
+            width: 50px;
+            height: 50px;
+            opacity: 0;              /* Oculto junto con el overlay */
+            transition: opacity 1s ease-in-out;
+        }
+         picture:hover .overlay img{
+           
+            opacity: 1;
+        }
+        picture:hover .overlay {
+           
+            opacity: 1;
+        }
+       
 picture img{
     border-radius: 1.2rem;
     width: 100%;
 }
+
+
 .card__content{
     display: flex;
     flex-direction: column;
@@ -89,23 +128,17 @@ span img{
 p a{
     color: var(--White);
 }
-picture {
-  width: 100%;
-  background-image: url('images/image-equilibrium.jpg');
-}
+
 a:hover {
     color: var(--Cyan-400);
     text-decoration: none;
-    transition: 0.3s ease-in-out color;
+    transition: 0.2s ease-in-out color;
 }
 
-.img__container > img:hover{
-     cursor: pointer;
-     
-    background-image: url('images/icon-view.svg');
-    background-color: var(--Cyan-400);
-   
-}
+/*Effect Motion*/
+
+
+
 @media  (min-width:30rem) {
      main{
         max-width: 22rem;
