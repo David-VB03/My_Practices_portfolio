@@ -1,0 +1,115 @@
+@import url('/base.css');
+
+
+:root{
+--Blue-500: hsl(215, 51%, 70%);
+--Cyan-400: hsl(178, 100%, 50%);
+
+--Blue-950 : hsl(217, 54%, 11%); /*(main BG)*/
+--Blue-900: hsl(216, 50%, 16%); /*(card BG)*/
+--Blue-800: hsl(215, 32%, 27%); /*(line )*/
+--White: hsl(0, 0%, 100%); 
+
+}
+body{
+    min-height: 100dvh;
+    font-size: 1rem;
+  font-family: 'Outfit' ,sans-serif;
+  background-color: var(--Blue-950);
+   padding: 2rem 0;
+   display: flex;
+   justify-content: center;
+}
+
+main{
+    max-width: 75%;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: var(--Blue-900);
+   
+   
+}
+h1{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--White);
+}
+
+picture img{
+    border-radius: 1.2rem;
+    width: 100%;
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+}
+.text__content,time__product{
+    color: var(--Blue-500) ;
+    font-weight: 400;
+}
+hr{ 
+   background-color: aqua;
+}
+span{
+    color: var(--Blue-500);
+}
+
+span img{
+    margin-inline-end: 0.5rem;
+}
+.details__information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price__product{
+    color: var(--Cyan-400);
+    font-weight: 400;
+}
+.author{
+   display: flex;
+   flex-direction: row;
+   gap: 0.7rem;
+   padding-block-start: 0.2rem;
+   align-items: center;
+   color: var(--Blue-500);
+}
+.author img{
+    background-color: var(--Cyan-400);
+    border-radius: 50%;
+    border: 2px solid var(--White);
+}
+p a{
+    color: var(--White);
+}
+picture {
+  width: 100%;
+  background-image: url('images/image-equilibrium.jpg');
+}
+a:hover {
+    color: var(--Cyan-400);
+    text-decoration: none;
+    transition: 0.3s ease-in-out color;
+}
+
+.img__container > img:hover{
+     cursor: pointer;
+     
+    background-image: url('images/icon-view.svg');
+    background-color: var(--Cyan-400);
+   
+}
+@media  (min-width:30rem) {
+     main{
+        max-width: 22rem;
+         
+     }
+  
+}

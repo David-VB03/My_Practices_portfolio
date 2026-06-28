@@ -13,27 +13,25 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Purple 700: hsl(257, 40%, 49%)
-- Magenta 400: hsl(300, 69%, 71%)
+- Blue 500: hsl(215, 51%, 70%)
+- Cyan 400: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Blue 950 (main BG): hsl(217, 54%, 11%)
+- Blue 900 (card BG): hsl(216, 50%, 16%)
+- Blue 800 (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
 
 ## Typography
 
-### Headings
+### Body Copy
 
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 400, 600
+- Font size (paragraph): 18px
 
-### Body
+### Font
 
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400
-
-## Icons
-
-For the social icons, you can use a font icon library. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com/)
-- [IcoMoon](https://icomoon.io/)
-- [Ionicons](https://ionicons.com/)
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
