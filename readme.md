@@ -26,6 +26,12 @@
 
 Este repositorio contiene una serie de **mini proyectos** diseñados para practicar y consolidar conocimientos en desarrollo frontend. Cada proyecto está basado en un desafío real de Frontend Mentor, abarcando desde niveles **Newbie** hasta **Advanced**.
 
+
+## Link del Demo :
+[Demo](https://david-vb03.github.io/My_Practices_portfolio/)  🚀🚀
+
+![Preview](List_Screenshot/Preview.png)
+
 ### 🎨 Objetivos
 
 - ✅ Mejorar habilidades en **HTML semántico**
@@ -40,46 +46,10 @@ Este repositorio contiene una serie de **mini proyectos** diseñados para practi
 
 | Nivel | Descripción | Proyectos |
 |-------|-------------|-----------|
-| 🟢 **Newbie** | Proyectos básicos para practicar HTML y CSS | 3 |
+| 🟢 **Newbie** | Proyectos básicos para practicar HTML y CSS | 9 |
 | 🟡 **Junior** | Incorporación de JavaScript y lógica simple | 4 |
 | 🟠 **Intermediate** | Proyectos más complejos con interactividad | 3 |
 | 🔴 **Advanced** | Desafíos completos con APIs y lógica avanzada | 2 |
-
----
-
-## 📁 Proyectos Incluidos
-
-### 🟢 Newbie (HTML + CSS)
-
-| # | Proyecto | Descripción | Demo | Código |
-|---|----------|-------------|------|--------|
-| 1 | **QR Code Component** | Tarjeta simple con código QR | [🔗 Ver Demo](link) | [📂 Ver Código](./newbie/qr-code-component) |
-| 2 | **NFT Preview Card** | Tarjeta de preview de NFT | [🔗 Ver Demo](link) | [📂 Ver Código](./newbie/nft-preview-card) |
-| 3 | **Order Summary Card** | Resumen de pedido con botones | [🔗 Ver Demo](link) | [📂 Ver Código](./newbie/order-summary-card) |
-
-### 🟡 Junior (HTML + CSS + JS Básico)
-
-| # | Proyecto | Descripción | Demo | Código |
-|---|----------|-------------|------|--------|
-| 4 | **Interactive Rating** | Sistema de calificación interactiva | [🔗 Ver Demo](link) | [📂 Ver Código](./junior/interactive-rating) |
-| 5 | **FAQ Accordion** | Acordeón de preguntas frecuentes | [🔗 Ver Demo](link) | [📂 Ver Código](./junior/faq-accordion) |
-| 6 | **Newsletter Sign-up** | Formulario de suscripción con validación | [🔗 Ver Demo](link) | [📂 Ver Código](./junior/newsletter-signup) |
-| 7 | **Results Summary** | Resumen de resultados con gráficos | [🔗 Ver Demo](link) | [📂 Ver Código](./junior/results-summary) |
-
-### 🟠 Intermediate (HTML + CSS + JS Avanzado)
-
-| # | Proyecto | Descripción | Demo | Código |
-|---|----------|-------------|------|--------|
-| 8 | **Todo App** | Aplicación de tareas con drag & drop | [🔗 Ver Demo](link) | [📂 Ver Código](./intermediate/todo-app) |
-| 9 | **Calculator** | Calculadora con operaciones básicas | [🔗 Ver Demo](link) | [📂 Ver Código](./intermediate/calculator) |
-| 10 | **Advice Generator** | Generador de consejos con API | [🔗 Ver Demo](link) | [📂 Ver Código](./intermediate/advice-generator) |
-
-### 🔴 Advanced (Full Stack / APIs)
-
-| # | Proyecto | Descripción | Demo | Código |
-|---|----------|-------------|------|--------|
-| 11 | **Space Tourism** | Landing page con navegación compleja | [🔗 Ver Demo](link) | [📂 Ver Código](./advanced/space-tourism) |
-| 12 | **E-commerce Product** | Carrito de compras con filtros | [🔗 Ver Demo](link) | [📂 Ver Código](./advanced/ecommerce-product) |
 
 ---
 
