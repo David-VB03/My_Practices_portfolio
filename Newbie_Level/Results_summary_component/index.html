@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="../Results_summary_component/style.css">
+  <link rel="stylesheet" href="/style.css">
   <title>Frontend Mentor | Results summary component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,40 +30,40 @@
 <body>
 
   <main class="card">
-    <div class="banner__card">
-      <p class="title__banner">Your Result</p>
-      <div class="results__container">
-        <h1 class="points__calification">76</h1>
-        <span class="total__calificaion">of 100</span>
+    <div class="card__result">
+      <p class="card__result--title">Your Result</p>
+      <div class="card__score">
+        <h1 class="card__score--value">76</h1>
+        <span class="card__score--total">of 100</span>
       </div>
-      <div class="details__container">
-        <p class="title__qualification">Great</p>
-        <p class="paragrah__qualification">
+      <div class="card__description">
+        <p class="card__rating">Great</p>
+        <p class="card__message">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
     </div>
-    <div class="summary__card">
-      <h3 class="title__summary">Summary</h3>
-      <ul class="list__topics">
-        <li class="item__list item__list--first">
-          <span class="item__list--reaction"> <img src="./assets/images/icon-reaction.svg" alt=""> Reaction</span>
+    <div class="card__summary">
+      <h3 class="card__summary--title">Summary</h3>
+      <ul class="card__topics">
+        <li class="card__topic card__topic--first">
+          <span class="card__topic--label1"> <img src="./assets/images/icon-reaction.svg" alt=""> Reaction</span>
           <p> 80 <strong>/ 100</strong></p>
         </li>
-        <li class="item__list item__list--second">
-          <span class="item__list--memory"> <img src="./assets/images/icon-memory.svg" alt=""> Memory</span>
+        <li class="card__topic card__topic--second">
+          <span class="card__topic--label2"> <img src="./assets/images/icon-memory.svg" alt=""> Memory</span>
           <p> 92 <strong>/ 100</strong></p>
         </li>
-        <li class="item__list item__list--third">
-          <span class="item__list--verbal"> <img src="./assets/images/icon-verbal.svg" alt=""> Verbal</span>
+        <li class="card__topic card__topic--third">
+          <span class="card__topic--label3"> <img src="./assets/images/icon-verbal.svg" alt=""> Verbal</span>
           <p> 61 <strong>/ 100 </strong></p>
         </li>
-        <li class="item__list item__list--fourth">
-          <span class="item__list--visual"> <img src="./assets/images/icon-visual.svg" alt=""> Visual</span>
+        <li class="card__topic card__topic--fourth">
+          <span class="card__topic--label4"> <img src="./assets/images/icon-visual.svg" alt=""> Visual</span>
           <p>72 <strong>/ 100</strong></p>
         </li>
       </ul>
-      <button class="button__card">Continue</button>
+      <button type="submit" class="card__button">Continue</button>
 
     </div>
   </main>

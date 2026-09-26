@@ -46,7 +46,7 @@ h1{
      justify-content: center;
 }
 
-.banner__card{
+.card__result{
       width: 100%;
    font-family: "Hanken Grotesk",sans-serif;
     padding: 1.8rem 3.8rem;
@@ -61,7 +61,7 @@ h1{
   border-bottom-right-radius: 3rem;
 }
 
-.results__container{
+.card__score{
     margin: 0.7rem 0;
     padding: 2.5rem 3.3rem;
    scale: 1;
@@ -71,47 +71,47 @@ h1{
     border: none;
     background: linear-gradient(to top, var(--Persian-blue),rgba(0, 0, 0, 0.486) );
 }
-.title__banner{
+.card__result--title{
     font-weight: 500;
     color: var(--Pale-blue);
     font-size: 1.125rem;
     opacity: .7;
 }
-.paragrah__qualification{
+.card__message{
     color: var(--Pale-blue);
     opacity: .8;
     font-weight: 500;
     margin-bottom: 1rem;
 }
-.total__calificaion{
+.card__score{
     opacity: .7;
     font-size: 1rem;
 }
-.title__qualification{
+.card__rating{
     font-weight: bold;
     font-size: 1.625rem;
     margin-bottom: .625rem;
 }
 /*Section Summary Card*/
-.summary__card{
+.card__summary{
     font-family: "Hanken Grotesk" , sans-serif;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.title__summary{
+.card__summary--title{
     font-size: 1.25rem;
     color: var(--Dark-gray-blue);
 }
 
-.list__topics{
+.card__topics{
     list-style-type: none;
     margin: 1.4rem 0;
    
 }
 
-.item__list{
+.card__topic{
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -121,23 +121,23 @@ h1{
     margin-top: 0.7rem;
 }
 
-.item__list--first{
+.card__topic--first{
  
   background-color: hsla(0, 100%, 67%,0.05);
 }
 
-.item__list--second{
+.card__topic--second{
    
     background-color: hsla(39, 100%, 56%,0.05);
 }
-.item__list--third{
+.card__topic--third{
    background-color: hsla(166, 100%, 37%,0.05);
 }
-.item__list--fourth{
+.card__topic--fourth{
      background-color: hsla(234, 85%, 45%,0.05);
 }
 
-.button__card{
+.card__button{
     font-weight: 400;
     font-size: 1.1rem;
     padding:1.1rem 0.7rem;
@@ -149,31 +149,31 @@ h1{
 
 
 
-.item__list > span{
+.card__topic > span{
     display: flex;
     align-items: center;
     gap: .7rem;
 }
-.item__list > p{
+.card__topic > p{
     font-weight: 700;
     color: var(--Dark-gray-blue);
 }
 
-.item__list > p > strong{
+.card__topic > p > strong{
     opacity: .6;
 }
 
 
-.item__list--reaction{
+.card__topic--label1{
     color: var(--Light-red);
 }
-.item__list--memory{
+.card__topic--label2{
 color: var(--orangey-yellow);
 }
-.item__list--verbal{
+.card__topic--label3{
     color: var(--Green-teal);
 }
-.item__list--visual{
+.card__topic--label4{
     color: var(--Cobalt-blue);
 }
 @media (min-width:651px){
@@ -193,7 +193,7 @@ color: var(--orangey-yellow);
         max-width:45rem;
        box-shadow: 6px 14px 19px -5px rgba(168, 85, 247, 0.28);
     }
-    .banner__card{
+    .card__result{
          border-radius: 2rem;
     }
 }
